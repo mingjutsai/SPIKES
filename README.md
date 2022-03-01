@@ -1,0 +1,2 @@
+# SPIKES
+Knowledge of the host-specific properties of the spike protein is of crucial importance to understand the adaptability of severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2) to infect multiple species and alter transmissibility, particularly in humans. Here, we propose a spike protein predictor SPIKES incorporating with an inheritable bi-objective combinatorial genetic algorithm to identify the biochemical properties of spike proteins and determine their specificity to human hosts. 
