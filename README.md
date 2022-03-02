@@ -39,20 +39,17 @@ mkdir example_output
 perl SPIKES_main.pl example.fa example_output
 ```
 
-## Result of ESA-UbiSite
+## Result of SPIKES
 
-results of example.fa -> example_output/ESAUbiSite_prediction.html
-[ESAUbiSite_prediction.html](https://nctuiclab.github.io/ESA-UbiSite/example_output/SPIKES_prediction_results.csv)
-
-## Dataset
-
-### The format of datasets
+results of example.fa -> example_output/SPIKES_prediction_results.csv
+[SPIKES_prediction_results.csv](https://mingjutsai.github.io/SPIKES/example_output/SPIKES_prediction_results.csv)
+### The format of prediction results
 
 - 1st: accession number of proteins
 - 2nd: protein sequence
 - 3rd: prediction score (normalized probabilities less than 0.5 are predicted to be human's Spike protein, those greater than 0.5 are predicted to be non-human's Spike protein.)
 
-### Precalculating Dataset
+## Precalculating Dataset
 
 - [All Human Spike protein sequences in FASTA format](dataset/Human.fasta)
 - [Prediction results of All Human Spike protein sequences](dataset/Human_SPIKES_prediction_results.csv)
