@@ -16,7 +16,7 @@ while(my $line=<RE>){
         next;
     }
     my @ele = split(/ /,$line);
-    print STDERR $no.":".$ele[2]."\n";
+    #print STDERR $no.":".$ele[2]."\n";
     $pred[$no] = $ele[2];
     $no++;
 }
@@ -37,7 +37,7 @@ while(my $line=<FA>){
              print OUT $line.",";
              next;
         }else{
-            print STDERR $n."\n";
+            #print STDERR $n."\n";
             print OUT ",".$pred[$n]."\n";
             print OUT $line.",";
             $n++;

@@ -1,6 +1,7 @@
 #!/usr/bin/perl
 use strict;
 use warnings;
+use File::Basename;
 my $fa = $ARGV[0];
 my $out_dir = $ARGV[1];
 if(@ARGV < 2){
@@ -14,7 +15,8 @@ foreach my $i (@amino){
     $amino{$i}++;
 }
 $out_dir =~ s/\/$//;
-my $out = $out_dir."/".$fa."_seq";
+my $fa_name = basename($fa);
+my $out = $out_dir."/".$fa_name.".seq";
 open OUT,">",$out;
 open FA,"<",$fa;
 while(my $line=<FA>){

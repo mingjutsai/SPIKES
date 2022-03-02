@@ -1,6 +1,7 @@
 #!/usr/bin/perl
 use strict;
 use warnings;
+use File::Basename;
 my $input = $ARGV[0];
 my $output_dir = $ARGV[1];
 if(@ARGV < 2){
@@ -26,11 +27,15 @@ my $cmd = "mkdir ".$tmp_dir;
 `$cmd`;
 $cmd = "perl src/fasta2seq.pl ".$input." ".$tmp_dir;
 `$cmd`;
-my $seq =  $tmp_dir."/".$input."_seq";
-my $seq_aa = $tmp_dir."/".$input."_aa";
-my $seq_aa_scale = $tmp_dir."/".$input."_scale";
+my $fa_name = basename($input);
+my $seq =  $tmp_dir."/".$fa_name.".seq";
+my $seq_aa = $seq.".aa";
+my $seq_aa_scale = $seq_aa.".scale";
 my $seq_aa_scale_feature_select = $seq_aa_scale."_features.tab";
 my $svm_predict_output = $seq_aa_scale_feature_select.".predict";
+if(!-e $seq){
+    print STDERR "Can't find ".$seq."\n";die;
+}
 $cmd = $aaindex." -a 0 ".$seq." > ".$seq_aa;
 `$cmd`;
 $cmd = $svm_scale." -r ".$svm_scale_range." ".$seq_aa." > ".$seq_aa_scale;
@@ -40,7 +45,6 @@ $cmd = "perl src/FeatureSelect_data.pl -data ".$seq_aa_scale." -tab src/libsvm_3
 $cmd = $svm_predict." -b 1 ".$seq_aa_scale_feature_select." SPIKES.model ".$svm_predict_output;
 `$cmd`;
 $cmd = "perl src/merge_results.pl ".$input." ".$svm_predict_output." ".$output_dir;
-print STDERR $cmd."\n";
 `$cmd`;
 
 

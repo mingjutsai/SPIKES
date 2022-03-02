@@ -38,13 +38,13 @@ while(my $line=<TAB>){
 	if($line =~ 'Features'){
 		my @tmp = split(/ /,$line);
 		$NumFeatures = $tmp[1];
-		print STDERR "NumFeatures:$NumFeatures\n";
+		#print STDERR "NumFeatures:$NumFeatures\n";
 		$feature_tag = 1;
 		next;
 	}
 	if($feature_tag){
 		$line =~ s/ //g;
-		print STDERR "$line\n";
+		#print STDERR "$line\n";
 		my @tmp = split(/,/,$line);
 		my $i = 0;
 		foreach my $x (@tmp){
