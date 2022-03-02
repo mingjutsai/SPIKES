@@ -56,7 +56,7 @@ results of example.fa -> example_output/SPIKES_prediction_results.csv
 - [All non-Human Spike protein sequences in FASTA format](dataset/nHuman.fasta)
 - [Prediction results of All non-Human Spike protein sequences](dataset/nHuman_SPIKES_prediction_results.csv)
 
-## Citing ESA-UbiSite
+## Citing SPIKES
 
 Tracking the amino acid changes of spike proteins across diverse host species of severe acute respiratory syndrome coronavirus 2. _iScience_, 2022 [PMID:[34877480](https://www.ncbi.nlm.nih.gov/pubmed/34877480)]
 
