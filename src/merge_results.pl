@@ -25,7 +25,7 @@ my $init = 0;
 
 my $n = 0;
 $out_dir =~ s/\/$//;
-my $out = $out_dir."/".$fa."_prediction_results.csv";
+my $out = $out_dir."/SPIKES_prediction_results.csv";
 open OUT,">",$out;
 print OUT "Header,Sequence,Prediction Score\n";
 open FA,"<",$fa;
