@@ -58,7 +58,9 @@ results of example.fa -> example_output/SPIKES_prediction_results.csv
 
 ## Citing SPIKES
 
-Tracking the amino acid changes of spike proteins across diverse host species of severe acute respiratory syndrome coronavirus 2. _iScience_, 2022 [PMID:[34877480](https://www.ncbi.nlm.nih.gov/pubmed/34877480)]
+- Tracking the amino acid changes of spike proteins across diverse host species of severe acute respiratory syndrome coronavirus 2. _iScience_, 2022 [PMID:[34877480](https://www.ncbi.nlm.nih.gov/pubmed/34877480)]
+- [![DOI](https://zenodo.org/badge/464990044.svg)](https://zenodo.org/badge/latestdoi/464990044)
+
 
 ## Contact
 
