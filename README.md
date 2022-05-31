@@ -58,6 +58,7 @@ results of example.fa -> example_output/SPIKES_prediction_results.csv
 
 ## Citing SPIKES
 
+- SPIKES:Identification of physicochemical properties of spike proteins across diverse host species of SARS-CoV-2, _STAR PROTOCOLS_, 2022 [DOI:https://doi.org/10.1016/j.xpro.2022.101460]
 - Tracking the amino acid changes of spike proteins across diverse host species of severe acute respiratory syndrome coronavirus 2. _iScience_, 2022 [PMID:[34877480](https://www.ncbi.nlm.nih.gov/pubmed/34877480)]
 - [![DOI](https://zenodo.org/badge/464990044.svg)](https://zenodo.org/badge/latestdoi/464990044)
 
